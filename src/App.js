@@ -1,19 +1,17 @@
-import "./App.css"
-import store from "./redux/store";
-import {Provider} from "react-redux";
-import TodoApp from "./components/TodoApp"
-import Counter from "./components/Counter";
+import { Provider } from "react-redux";
+import "./App.css";
 import Post from "./components/Post";
+import store from "./redux/store";
 
 function App() {
   return (
-      <Provider store={store}>
-          <div className="App" >
-              {/*<TodoApp/>*/}
-              {/*<Counter/>*/}
-              <Post/>
-          </div>
-      </Provider>
+    <Provider store={store}>
+      <div className="App">
+        {/*<TodoApp/>*/}
+        {/*<Counter/>*/}
+        <Post />
+      </div>
+    </Provider>
   );
 }
 
