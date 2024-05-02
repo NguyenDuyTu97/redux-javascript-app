@@ -16,10 +16,10 @@ const postSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(getDataThunk.pending, (state) => {
-        state.isLoading = false;
+        state.isLoading = true;
       })
       .addCase(getDataThunk.fulfilled, (state, action) => {
-        state.isLoading = true;
+        state.isLoading = false;
         state.list = action.payload;
       });
   },
