@@ -28,8 +28,12 @@ function Post() {
   return (
     <div>
       <h2>This is Post list</h2>
-      <button onClick={handleGetData}>Get data</button>
-      <button onClick={handleResetData}>Reset data</button>
+      <button disabled={posts?.length} onClick={handleGetData}>
+        Get data
+      </button>
+      <button disabled={!posts?.length} onClick={handleResetData}>
+        Reset data
+      </button>
       <p>{`Loading: ${isLoading}`}</p>
 
       <div>
