@@ -8,7 +8,6 @@ const todoReducer = (state = initState, action)=>{
         case ADD_TODO:{
             const newList = [...state.list];
             newList.push(action.payload.text);
-
             return {
                 ...state,
                 list:newList

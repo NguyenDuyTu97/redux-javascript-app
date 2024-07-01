@@ -1,0 +1,10 @@
+.chart-container {
+  border: 1px solid grey;
+  margin: 8px;
+  padding: 16px;
+  background-color: white;
+}
+
+.is-dragging {
+  background-color: blue;
+}
